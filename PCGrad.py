@@ -30,11 +30,6 @@ class PCGrad(optimizer.Optimizer):
                             for grad in tf.gradients(x, var_list)
                             if grad is not None], axis=0), loss)
 
-        
-        print (type(tf.gradients(loss[0], var_list)))
-        print (tf.gradients(loss[0], var_list))
-        print ('var list: ', var_list)
-        print (grads_task)
 
         # Compute gradient projections.
         def proj_grad(grad_task):
@@ -51,7 +46,6 @@ class PCGrad(optimizer.Optimizer):
         for j in range(num_tasks):
             start_idx = 0
             for idx, var in enumerate(var_list):
-                print (idx, var)
                 grad_shape = var.get_shape()
                 flatten_dim = np.prod([grad_shape.dims[i].value for i in range(len(grad_shape.dims))])
                 proj_grad = proj_grads_flatten[j][start_idx:start_idx+flatten_dim]
