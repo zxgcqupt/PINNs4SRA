@@ -7,8 +7,7 @@ g = @(t,p)[-2.572e-4*t*p(1);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ODE solver        
-[t,xa] = ode45(@(t,p) g(t,p),[0 300],[1 0 0]);
-% [t,xa] = ode23(@(t,p) g(t,p),[0 1000],[1 0 0]);
+[t,xa] = ode45(@(t,p) g(t,p),linspace(0,300,300+1),[1 0 0]);
 % visualize
 figure
 plot(t,xa(:,1),'r','LineWidth',2)
@@ -27,16 +26,7 @@ ax = gca;
 ax.FontSize = 13;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% interpolate time series data
-ts = timeseries(xa,t,'Name','Solver-out'); % Create timeseries object
-% Generate the new timeseries of interest
-timeNEW =linspace(0,300,300+1); % Specify the new time vector of interest
-ts1 = resample(ts, timeNEW,'linear');
-%ts2 = resample(ts, timeNEW,'zoh');
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % prepare output
-intOut = [ts1.Time,ts1.Data];
-tt = intOut(:,1);
+intOut = [t,xa];
 %output files
 csvwrite('Example_2_solver.csv',intOut)
