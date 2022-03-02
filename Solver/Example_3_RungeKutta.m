@@ -21,7 +21,7 @@ g = @(t,p)[
     Lambda3_2_3*p(1)-(Mu2_3_3+Lambda2_1_1+Lambda2_1_2+Lambda2_1_3)*p(4)+Mu1_2_1*p(6)+Mu1_2_2*p(7)+Mu1_2_3*p(8);%f(4)
     Lambda2_1_2*p(2)+Lambda2_1_1*p(3)-(Mu1_2_2+Mu1_2_1+Lambda3_2_3)*p(5)+Mu2_3_3*p(9);%f(5)
     Lambda3_2_3*p(2)+Lambda2_1_1*p(4)-(Mu2_3_3+Mu1_2_1+Lambda2_1_2+Lambda2_1_3)*p(6)+Mu1_2_2*p(9)+Mu1_2_3*p(10);%f(6)
-    Lambda3_2_3*p(3)+Lambda2_1_2*p(4)-(Mu2_3_3+Mu1_2_2+Lambda2_1_1+Lambda2_1_3)*p(7)+Mu1_2_1*p(9)+Mu2_3_3*p(11);%f(7)
+    Lambda3_2_3*p(3)+Lambda2_1_2*p(4)-(Mu2_3_3+Mu1_2_2+Lambda2_1_1+Lambda2_1_3)*p(7)+Mu1_2_1*p(9)+Mu1_2_3*p(11);%f(7)
     Lambda2_1_3*p(4)-(Mu1_2_3+Lambda2_1_1+Lambda2_1_2)*p(8)+Mu1_2_1*p(10)+Mu1_2_2*p(11);%f(8)
     Lambda3_2_3*p(5)+Lambda2_1_2*p(6)+Lambda2_1_1*p(7)-(Mu2_3_3+Mu1_2_2+Mu1_2_1+Lambda2_1_3)*p(9)+Mu1_2_3*p(12);%f(9)
     Lambda2_1_3*p(6)+Lambda2_1_1*p(8)-(Mu1_2_3+Mu1_2_1+Lambda2_1_2)*p(10)+Mu1_2_2*p(12);%f(10)
