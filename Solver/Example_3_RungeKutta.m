@@ -1,7 +1,9 @@
+tic
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Book- 83
-% Lisnianski, A., Frenkel, I., & Ding, Y. (2010). 
-% Multi-state system reliability analysis and optimization 
+% Lisnianski, A., Frenkel, I., & Ding, Y. (2010).
+% Multi-state system reliability analysis and optimization
 % for engineers and industrial managers. Springer Science & Business Media.
 %% specify transition rate
 %for the element 1
@@ -27,11 +29,11 @@ g = @(t,p)[
     Lambda2_1_3*p(6)+Lambda2_1_1*p(8)-(Mu1_2_3+Mu1_2_1+Lambda2_1_2)*p(10)+Mu1_2_2*p(12);%f(10)
     Lambda2_1_3*p(7)+Lambda2_1_2*p(8)-(Mu1_2_3+Mu1_2_2+Lambda2_1_1)*p(11)+Mu1_2_1*p(12);%f(11)
     Lambda2_1_3*p(9)+Lambda2_1_2*p(10)+Lambda2_1_1*p(11)-(Mu1_2_3+Mu1_2_2+Mu1_2_1)*p(12);%f(12)
-   ];  
+   ];
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ODE solver           
+% ODE solver
 [t,xa] = ode45(@(t,p) g(t,p),linspace(0,0.2,500+1),[1 0 0 0 0 0 0 0 0 0 0 0]);
 % visualize
 figure
@@ -48,10 +50,12 @@ ylim([0 1])
 %xlim([0 300])
 title('Runge-Kutta Method(Homogenous)')
 ax = gca;
-ax.FontSize = 13;
+%ax.FontSize = 13;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % prepare output
 intOut = [t,xa];
 %output files
 csvwrite('Example_3_solver.csv',intOut)
+
+toc
