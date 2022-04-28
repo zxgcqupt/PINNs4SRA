@@ -12,7 +12,7 @@ In this project, we develop a generic physics-informed neural netwowk (PINN)-bas
 * The source codes of the three numerical examples are saved in three separate folders: **small_homogeneous_CTMC**, **small_non_homogeneous_CTMC**, and **medium_homogeneous_CTMC**. 
 * The source codes of MCS simulations for the three numerical examples are saved in the folder **Monte Carlo Simulation**. 
 * The Matlab codes of the Runge-Kutta method are saved in the folder **Solver**
-* Note that the two folders **small_homogeneous_CTMC** and **medium_homogeneous_CTMC** correspond to the first and the third numerical example, and the notebook "Analytical_solution_for_...." illustrates the basic steps to perform MSS reliability assessment by using two analytical solutions: eigenvectors-based method and Laplace transform-based approach. 
+* Note that the two folders **small_homogeneous_CTMC** and **medium_homogeneous_CTMC** correspond to the first and the third numerical example in the paper, and the notebook "Analytical_solution_for_...." illustrates the basic steps to perform MSS reliability assessment by using two analytical solutions: eigenvectors-based method and Laplace transform-based approach. 
 
 
 ## Requirements
