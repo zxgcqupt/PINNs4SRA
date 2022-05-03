@@ -32,7 +32,7 @@ numpy==1.22.2
 pandas==1.4.1
 seaborn==0.11.2
 sympy==1.10.1
-tensorflow==2.8.0
+tensorflow==2.7.0
 tensorflow_gpu==2.7.0
 tqdm==4.62.3
 jupyter==1.0.0
