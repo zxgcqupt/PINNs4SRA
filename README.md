@@ -8,7 +8,7 @@ In this project, we develop a generic physics-informed neural netwowk (PINN)-bas
 
 ## Getting Started
 
-* CTMC：continuous-time Markov chain.
+* **CTMC**：continuous-time Markov chain.
 * The source codes of the three numerical examples are saved in three separate folders: **small_homogeneous_CTMC**, **small_non_homogeneous_CTMC**, and **medium_homogeneous_CTMC**. 
 * The source codes of MCS simulations for the three numerical examples are saved in the folder **Monte Carlo Simulation**. 
 * The Matlab codes of the Runge-Kutta method are saved in the folder **Solver**
