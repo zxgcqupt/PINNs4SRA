@@ -44,7 +44,7 @@ If you find our program useful for your work, we kindly request that you cite th
 @article{zhou2022PINN,
   title={A generic physics-informed neural network-based framework for reliability assessment of multi-state systems},
   author={Zhou, Taotao and Zhang, Xiaoge and Droguett, Enrique Lopez and Mosleh, Ali},
-  journal={Reliability Engineering & Systems Safety},
+  journal={Reliability Engineering \& Systems Safety},
   volume={Under Review},
   year={2022},
   publisher={Elsevier}
