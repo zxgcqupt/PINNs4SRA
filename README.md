@@ -41,12 +41,12 @@ jupyter==1.0.0
 ## Reference
 If you find our program useful for your work, we kindly request that you cite the following work. 
 ```
-@article{zhou2022PINN,
+@article{zhou2022generic,
   title={A generic physics-informed neural network-based framework for reliability assessment of multi-state systems},
   author={Zhou, Taotao and Zhang, Xiaoge and Droguett, Enrique Lopez and Mosleh, Ali},
   journal={Reliability Engineering \& System Safety},
-  volume={Under Review},
-  year={2022},
+  pages={108835},
+  year={2023},
   publisher={Elsevier}
 }
 ```
